@@ -1,4 +1,8 @@
 class ProjectsController < ApplicationController
+
+    def home
+        render json: {welcome: "Abzed Mohammed Portfolio API"}
+    end
     def index
         render json: Project.all, status: :ok
     end
